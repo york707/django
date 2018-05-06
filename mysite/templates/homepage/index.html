@@ -1,0 +1,61 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Five Hundred Miles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <link href="{% static 'index/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'index/css/cover.css'%}"  rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix ">
+            <div class="inner">
+              <h3 class="masthead-brand">你好</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="{% url 'index:index' %}">Home</a></li>
+                  <li><a href="{% url 'blog:index' %}">Blog</a></li>
+                  <li><a href="http://wh1te.club:81">Library</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <div class="inner cover">
+            <img src="{% static 'index/images/magua.jpg'%}" width="350">
+            <h1 class="cover-heading">Five Hundred Miles</h1>
+            <p class="lead">想养一只有神经病的猫</p>
+            <p class="lead">
+              <a href="http://music.163.com/#/user/home?id=131240787" class="btn-danger btn-lg">Cloudmusic</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>© 2018 Wh1te | 保留一切权利</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  
+
+    
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="{% static 'index/js/bootstrap.min.js'%}"></script>
+</body>
+</html>
